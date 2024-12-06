@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University website desingn - easy tutorials</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap');
+</style>
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="eduford_img/eduford_img/logo.png" alt="" srcset="" ></a>
+      <div class="nav-links" id="nav-links">
+       <i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">BLOGS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+       
+      </div>
+       <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      
+    </nav>
+ <h1>About us</h1>
+
+  </section>
+<!-- ------- About us content-------- -->
+<section class="about-us">
+  <div class="row">
+    <div class="about-col">
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi amet totam deleniti vero at nam ratione aperiam laborum suscipit ullam?</p>
+      <a href=""  class="hero-btn red-btn">EXPLORE NOW</a>
+    </div>
+    <div class="about-col">
+     <img src="eduford_img/eduford_img/about.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+ 
+
+<!-- ------- Footer-------- -->
+<section class="footer">
+  <h4>About us</h4>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime provident dolor, praesentium omnis numquam ducimus!
+  </p>
+  <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+       <i class="fa-brands fa-linkedin"></i>
+  </div>
+</section> 
+
+<!-- ------- javascript-------- -->
+  <script>
+    let navLinks = document.getElementById("nav-links");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+
+
+
+/*************    *************/
+    /**
+     * Hides the menu by setting the right CSS property of navLinks to -200px
+     */
+/******    *******/
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
